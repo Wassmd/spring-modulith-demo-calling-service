@@ -1,0 +1,15 @@
+### GET request to example server
+GET http://localhost:8081/customers/1
+
+###
+POST http://localhost:8081/customers
+Content-Type: application/json
+
+{
+  "name": "Wasim",
+  "address": {
+    "street": "Lehnstedter Str 98",
+    "city": "Bremen",
+    "zipCode": "28201"
+  }
+}

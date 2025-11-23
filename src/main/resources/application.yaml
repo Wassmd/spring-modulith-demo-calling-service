@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: spring-modulith-demo-calling-service
+  security:
+    oauth2:
+      client:
+        registration:
+          spring-modulith-call:
+            client-id: spring-modulith-demo
+            client-secret: XjJE5ncbH9gFFcCuPBEaR5taDshzwOoC
+            authorization-grant-type: client_credentials
+            scope: openid
+        provider:
+          spring-modulith-call:
+            token-uri: http://localhost:8180/realms/master/protocol/openid-connect/token
+
+server:
+  port: 8081
